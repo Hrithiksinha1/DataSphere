@@ -5,7 +5,7 @@ from pypdf import PdfReader
 from typing import List, Dict
 import uuid
 from io import BytesIO
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 def extract_text_from_pdf(pdf_content: bytes) -> str:
     """Extract text from PDF content"""

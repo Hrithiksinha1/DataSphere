@@ -6,9 +6,10 @@ from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 from app.llm import get_llm
 from app.vector_store import search_similar_documents
-from langchain.chains import ConversationalRetrievalChain
+#from langchain_community.chains import ConversationalRetrievalChain
+
 from langchain.memory import ConversationBufferMemory
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 chat_router = APIRouter()
 
